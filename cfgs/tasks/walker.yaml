@@ -1,0 +1,28 @@
+# environment
+env: dmcontrol
+modality: 'state'
+domain: walker
+task: walker-run
+tasks: [walker-run,walker-walk,walker-walk-backwards,walker-stand]
+action_repeat: 2
+episode_length: 1000/${action_repeat}
+train_steps: 600000/${action_repeat}
+
+# learning
+batch_size: 512
+max_buffer_size: 1000000
+horizon: 25
+horizons: [15,15,15,15]
+update_freq: 2
+vae_data_update_freq: 10
+kl_coef: 0.02
+num_episodes: 20
+
+# architecture
+enc_dim: 256
+
+# misc
+eval_freq: 20000
+eval_episodes: 20
+save_video: true
+first_step_qr_only: true

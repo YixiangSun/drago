@@ -1,0 +1,91 @@
+# environment
+env: minigrid
+domain: minigrid
+task: MiniGrid-FourRooms-New
+tasks: [MiniGrid-FourRooms-New,MiniGrid-FourRooms-New,MiniGrid-FourRooms-New,MiniGrid-FourRooms-New]
+render_mode: null
+action_repeat: 1
+modality: 'state'
+discount: 0.99
+episode_length: 100/${action_repeat}
+train_steps: 300000/${action_repeat}
+agent_poses: [[1,1],[25,1],[1,25],[25,25]]
+goal_poses: [[8, 12], [17, 12], [12, 19], [18, 15]]
+goal_radius: 12
+dense_reward: true
+task_idx: 0
+size: 27
+put_blocks: true
+
+# planning
+iterations: 6
+num_samples: 512
+num_elites: 64
+mixture_coef: 0.05
+min_std: 0.05
+temperature: 0.5
+momentum: 0.1
+use_q: true
+
+# learning
+batch_size: 512
+max_buffer_size: 1000000
+horizon: 10
+horizons: [10, 10, 10, 10]
+reward_coef: 0.5
+value_coef: 0.1
+consistency_coef: 2
+curiosity_coef: 0
+familiarity_coef: 0
+recon_coef: 1
+kl_coef: 1.0
+rho: 0.5
+kappa: 0.1
+lr: 1e-3
+std_schedule: linear(0.5, ${min_std}, 50000)
+horizon_schedule: linear(1, ${horizon}, 10000)
+per_alpha: 0.6
+per_beta: 0.4
+grad_clip_norm: 10
+seed_steps: 5000
+update_freq: 40
+tau: 0.01
+save_freq: 50000
+save_image_freq: 10000
+sigmoid_threshold: 9.5
+reviewer_ratio: 0.5
+cost_coef: 0.5
+first_step_qr_only: false
+num_episodes: 10
+
+# architecture
+use_encoder: false
+use_reviewer: true
+use_vae: true
+update_vae: true
+enc_dim: 64
+mlp_dim: 512
+latent_dim: 50
+vae_enc_dim: 64
+gumble_temp: 1.0
+use_crelu: false
+vae_data_update_freq: 1
+
+# fine-tuning
+ckpt: null
+load_policy: false
+pre_rollout_ckpt: null
+pre_rollout_steps: 100
+
+# wandb (insert your own)
+use_wandb: false
+wandb_project: null
+wandb_entity: null
+
+# misc
+seed: 1
+exp_name: default
+eval_freq: 10000
+eval_episodes: 10
+save_video: false ## cannot save video in minigrid
+save_model: true
