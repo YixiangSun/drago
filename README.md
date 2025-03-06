@@ -1,8 +1,8 @@
-# Dynamics Learning while Retaining Memories
+# Knowledge Retention for Continual Model-Based Reinforcement Learning
 
 ----
 
-Original PyTorch implementation of **DRAGO** used on TD-MPC
+Original PyTorch implementation of **DRAGO**: 
 
 
 <p align="center">
@@ -30,14 +30,12 @@ conda env create -f environment.yaml
 conda activate drago
 ```
 
-After installing dependencies, you can continually learn a comprehensive world model and corresponding
-TD-MPC models of a sequence of tasks. 
 
 For MiniGrid World, the continual learning tasks are based on MiniGrid-FourRooms. Every continual learning task initializes the agent at each corner respectively, with a goal set in the same room.
 
-For cheetah, the continual learning tasks are: [cheetah-run, cheetah-jump, cheetah-run-backwards]).
+For cheetah, the continual training tasks are: [cheetah-run, cheetah-jump, cheetah-run-backwards]).
 
-For walker, the continual learning tasks are: [walker-run, walker-run, walker-stand, walker-run-backwards]).
+For walker, the continual training tasks are: [walker-run, walker-run, walker-stand, walker-run-backwards]).
 
 ```
 python src/train.py env=minigrid domain=minigrid # add render_mode='human' for visualization
@@ -45,7 +43,7 @@ python src/train.py env=dmcontrol domain=cheetah
 python src/train.py env=dmcontrol domain=walker
 ```
 
-To load pretrained world model and train on a new task in the same domain, for MiniGrid World:
+To load the pretrained world model and train on a new task in the same domain, for MiniGrid World:
 
 ```
 python src/train.py env=minigrid domain=minigrid ckpt=PATH_TO_PRETRAINED_MODEL_FILE tasks=[MiniGrid-FourRooms-New]\
@@ -54,7 +52,7 @@ agent_poses=[[11,8]] goal_poses=[[14,9]]
 
 You can modify agent initial position and goal position as needed.
 
-For cheetah and walker, to train for transition between tasks using cheetah jump2run as an example:
+For cheetah and walker, for testing the transfer performance during continual learning, using cheetah jump2run as an example:
 
 ```
 python src/train.py env=dmcontrol domain=cheetah ckpt=PATH_TO_PRETRAINED_MODEL_FILE pre_rollout_ckpt=PATH_TO_PRETRAINED_CHEETAH_JUMP_MODEL tasks=[cheetah-run]
