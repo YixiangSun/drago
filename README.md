@@ -32,6 +32,7 @@ conda activate drago
 
 After installing dependencies, you can continually learn a comprehensive world model and corresponding
 TD-MPC models of a sequence of tasks. 
+
 For MiniGrid World, the continual learning tasks are based on MiniGrid-FourRooms. Every continual learning task initializes the agent at each corner respectively, with a goal set in the same room.
 
 For cheetah, the continual learning tasks are: [cheetah-run, cheetah-jump, cheetah-run-backwards]).
