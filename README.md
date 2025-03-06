@@ -45,23 +45,25 @@ python src/train.py env=dmcontrol domain=cheetah
 python src/train.py env=dmcontrol domain=walker
 ```
 
-To load pretrained world model and train on a new task in the same domain,
-
-for MiniGrid World, run:
+To load pretrained world model and train on a new task in the same domain, for MiniGrid World, run:
 
 ```
-python src/train.py env=minigrid domain=minigrid ckpt=PATH_TO_PRETRAINED_MODEL_FILE tasks=[MiniGrid-FourRooms-New] agent_poses=[[11,8]] goal_poses=[[14,9]] # you can modify agent initial position and goal position as needed
+python src/train.py env=minigrid domain=minigrid ckpt=PATH_TO_PRETRAINED_MODEL_FILE tasks=[MiniGrid-FourRooms-New] agent_poses=[[11,8]] goal_poses=[[14,9]]
 ```
 
-If you want to load pretrained world model and train for cheetah jump2run for evaluation:
+You can modify agent initial position and goal position as needed.
+
+For cheetah and walker:
+
+to train for transition between tasks, using cheetah jump2run as an example:
 
 ```
 python src/train.py env=dmcontrol domain=cheetah ckpt=PATH_TO_PRETRAINED_MODEL_FILE pre_rollout_ckpt=PATH_TO_PRETRAINED_CHEETAH_JUMP_MODEL tasks=[cheetah-run]
 ```
 
-You can modify domain, pre-rollout model checkpoint, and tasks arguments to train for the transition between any two tasks included in continual learning for cheetah or walker.
+You can modify the domain, pre-rollout model checkpoint, and tasks arguments to train for the other transitions.
 
-In addition, you can load the pretrained world model and train for cheetah jump-and-run or cheetah jump-and-back as follows (jump-and-run as example):
+In addition, you can also evaluate pretrained world model using cheetah jump-and-run or cheetah jump-and-back as follows (jump-and-run as example):
 
 ```
 python src/train.py env=dmcontrol domain=cheetah ckpt=PATH_TO_PRETRAINED_MODEL_FILE tasks=[cheetah-jump-and-run]
