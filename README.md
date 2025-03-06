@@ -7,7 +7,7 @@ Original PyTorch implementation of **DRAGO** used on TD-MPC
 
 <p align="center">
   <br><img src='media/drago.png' width="600"/><br>
-   <a href="https://github.com/yixiang-sun/Knowledge-Retention-for-Continual-MBRL/">[Website]</a>
+   <a href="">[Paper]</a>
 </p>
 
 
