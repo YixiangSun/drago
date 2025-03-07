@@ -7,7 +7,7 @@ Original PyTorch implementation of **DRAGO**:
 
 <p align="center">
   <br><img src='media/drago.png' width="600"/><br>
-   <a href="">[Paper]</a>
+   <a href="https://arxiv.org/pdf/2503.04256">[Paper]</a>
 </p>
 
 
