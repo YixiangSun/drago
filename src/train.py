@@ -66,7 +66,7 @@ def train(cfg):
 	
 	for task_idx in range(start_idx, len(cfg.tasks)):
 		work_dir = Path().cwd() / __LOGS__ / cfg.task / cfg.exp_name\
-			/ f"task_idx_{task_idx}" / str(cfg.seed)
+			/ f"task_idx_{task_idx}" / f"seed_{cfg.seed}"
 		if cfg.env == 'metaworld':
 			cfg.coffee_tasks = cfg.coffee_tasks_list[task_idx]
 		cfg.task_idx = task_idx
