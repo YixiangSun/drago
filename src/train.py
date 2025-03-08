@@ -59,14 +59,14 @@ def train(cfg):
 	"""Training script for DRAGO. Requires a CUDA-enabled device."""
 	assert torch.cuda.is_available()
 	set_seed(cfg.seed)
-	work_dir = Path().cwd() / __LOGS__ / cfg.task / cfg.modality / cfg.exp_name\
-		  / str(cfg.task_idx) / str(cfg.seed)
 	fp = cfg.ckpt
 	start_idx = cfg.task_idx
 	pre_rollout_agent = None
 	cfg.time_limit = cfg.episode_length * cfg.action_repeat
 	
 	for task_idx in range(start_idx, len(cfg.tasks)):
+		work_dir = Path().cwd() / __LOGS__ / cfg.task / cfg.exp_name\
+			/ f"task_idx_{task_idx}" / str(cfg.seed)
 		if cfg.env == 'metaworld':
 			cfg.coffee_tasks = cfg.coffee_tasks_list[task_idx]
 		cfg.task_idx = task_idx

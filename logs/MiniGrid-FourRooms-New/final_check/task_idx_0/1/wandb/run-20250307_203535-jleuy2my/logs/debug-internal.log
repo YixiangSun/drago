@@ -1,0 +1,556 @@
+2025-03-07 20:35:35,151 INFO    StreamThr :2129435 [internal.py:wandb_internal():86] W&B internal server running at pid: 2129435, started at: 2025-03-07 20:35:35.148842
+2025-03-07 20:35:35,152 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status
+2025-03-07 20:35:35,161 INFO    WriterThread:2129435 [datastore.py:open_for_write():87] open: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/run-jleuy2my.wandb
+2025-03-07 20:35:35,164 DEBUG   SenderThread:2129435 [sender.py:send():382] send: header
+2025-03-07 20:35:35,196 DEBUG   SenderThread:2129435 [sender.py:send():382] send: run
+2025-03-07 20:35:35,698 INFO    SenderThread:2129435 [dir_watcher.py:__init__():211] watching files in: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files
+2025-03-07 20:35:35,699 INFO    SenderThread:2129435 [sender.py:_start_run_threads():1136] run started: jleuy2my with start time 1741397735.149856
+2025-03-07 20:35:35,708 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: check_version
+2025-03-07 20:35:35,708 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: check_version
+2025-03-07 20:35:35,800 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: run_start
+2025-03-07 20:35:35,818 DEBUG   HandlerThread:2129435 [system_info.py:__init__():27] System info init
+2025-03-07 20:35:35,818 DEBUG   HandlerThread:2129435 [system_info.py:__init__():42] System info init done
+2025-03-07 20:35:35,818 INFO    HandlerThread:2129435 [system_monitor.py:start():194] Starting system monitor
+2025-03-07 20:35:35,818 INFO    SystemMonitor:2129435 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-03-07 20:35:35,818 INFO    HandlerThread:2129435 [system_monitor.py:probe():214] Collecting system info
+2025-03-07 20:35:35,819 INFO    SystemMonitor:2129435 [interfaces.py:start():190] Started cpu monitoring
+2025-03-07 20:35:35,819 INFO    SystemMonitor:2129435 [interfaces.py:start():190] Started disk monitoring
+2025-03-07 20:35:35,821 INFO    SystemMonitor:2129435 [interfaces.py:start():190] Started gpu monitoring
+2025-03-07 20:35:35,822 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:35,822 INFO    SystemMonitor:2129435 [interfaces.py:start():190] Started memory monitoring
+2025-03-07 20:35:35,823 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:35,823 INFO    SystemMonitor:2129435 [interfaces.py:start():190] Started network monitoring
+2025-03-07 20:35:35,852 DEBUG   HandlerThread:2129435 [system_info.py:probe():151] Probing system
+2025-03-07 20:35:35,862 DEBUG   HandlerThread:2129435 [system_info.py:_probe_git():136] Probing git
+2025-03-07 20:35:35,890 DEBUG   HandlerThread:2129435 [system_info.py:_probe_git():144] Probing git done
+2025-03-07 20:35:35,890 DEBUG   HandlerThread:2129435 [system_info.py:probe():199] Probing system done
+2025-03-07 20:35:35,890 DEBUG   HandlerThread:2129435 [system_monitor.py:probe():223] {'os': 'Linux-5.14.0-284.11.1.el9_2_cifs.x86_64-x86_64-with-glibc2.34', 'python': '3.9.0', 'heartbeatAt': '2025-03-08T01:35:35.852981', 'startedAt': '2025-03-08T01:35:35.105754', 'docker': None, 'cuda': None, 'args': ('use_wandb=True', 'wandb_entity=dmc-finetuning', 'wandb_project=1to3', 'ckpt=/oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/state/minigrid_final/0/1/models/model_300000.pt', 'tasks=[MiniGrid-FourRooms-New]', 'exp_name=final_check', 'agent_poses=[[8,11]]', 'goal_poses=[[9,14]]', 'use_reviewer=false', 'use_vae=false', 'update_vae=false', 'dense_reward=false', 'seed_steps=0', 'seed=1'), 'state': 'running', 'program': '/oscar/data/gdk/ysun133/drago/src/train.py', 'codePathLocal': 'src/train.py', 'codePath': 'src/train.py', 'git': {'remote': 'git@github.com:YixiangSun/drago.git', 'commit': 'e9329f0b52687448496aa46c42d7129dbfa4bc50'}, 'email': 'yixiang_sun@brown.edu', 'root': '/oscar/data/gdk/ysun133/drago', 'host': 'gpu2003.oscar.ccv.brown.edu', 'username': 'ysun133', 'executable': '/users/ysun133/miniconda3/envs/tdmpc2/bin/python', 'cpu_count': 32, 'cpu_count_logical': 32, 'cpu_freq': {'current': 2975.0018125, 'min': 1200.0, 'max': 3900.0}, 'cpu_freq_per_core': [{'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.002, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3499.999, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.003, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.002, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}, {'current': 3500.042, 'min': 1200.0, 'max': 3900.0}, {'current': 2800.0, 'min': 1200.0, 'max': 3900.0}], 'disk': {'/': {'total': 187.77203750610352, 'used': 8.449348449707031}}, 'gpu': 'Quadro RTX 6000', 'gpu_count': 1, 'gpu_devices': [{'name': 'Quadro RTX 6000', 'memory_total': 25769803776}], 'memory': {'total': 375.5440788269043}}
+2025-03-07 20:35:35,890 INFO    HandlerThread:2129435 [system_monitor.py:probe():224] Finished collecting system info
+2025-03-07 20:35:35,890 INFO    HandlerThread:2129435 [system_monitor.py:probe():227] Publishing system info
+2025-03-07 20:35:35,890 DEBUG   HandlerThread:2129435 [system_info.py:_save_conda():208] Saving list of conda packages installed into the current environment
+2025-03-07 20:35:36,701 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_created():271] file/dir created: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/conda-environment.yaml
+2025-03-07 20:35:37,824 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:37,824 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:39,824 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:39,824 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:41,825 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:41,825 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:43,825 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:43,825 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:44,706 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/conda-environment.yaml
+2025-03-07 20:35:44,706 DEBUG   HandlerThread:2129435 [system_info.py:_save_conda():220] Saving conda packages done
+2025-03-07 20:35:44,710 INFO    HandlerThread:2129435 [system_monitor.py:probe():229] Finished publishing system info
+2025-03-07 20:35:44,741 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:35:44,741 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: keepalive
+2025-03-07 20:35:44,742 DEBUG   SenderThread:2129435 [sender.py:send():382] send: files
+2025-03-07 20:35:44,742 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2025-03-07 20:35:44,746 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: python_packages
+2025-03-07 20:35:44,747 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:35:44,747 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: python_packages
+2025-03-07 20:35:44,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:35:44,768 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:35:44,959 DEBUG   SenderThread:2129435 [sender.py:send():382] send: telemetry
+2025-03-07 20:35:45,001 INFO    wandb-upload_0:2129435 [upload_job.py:push():131] Uploaded file /tmp/tmpksrkhh8ywandb/05xsip4o-wandb-metadata.json
+2025-03-07 20:35:45,708 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_created():271] file/dir created: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-metadata.json
+2025-03-07 20:35:45,708 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_created():271] file/dir created: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:35:45,708 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_created():271] file/dir created: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/requirements.txt
+2025-03-07 20:35:45,825 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:45,826 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:45,963 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:35:47,710 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:35:47,826 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:47,826 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:49,827 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:49,827 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:50,963 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:35:51,514 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,555 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,555 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,555 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,555 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,555 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,556 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:35:51,828 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:51,828 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:53,715 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:35:53,828 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:53,828 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:55,828 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:55,828 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:56,557 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:35:57,829 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:57,829 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:35:59,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:35:59,745 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:35:59,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:35:59,829 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:35:59,829 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:01,829 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:01,829 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:01,853 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:03,830 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:03,830 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:03,847 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:03,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:05,724 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:05,830 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:05,830 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:06,893 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:07,726 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/config.yaml
+2025-03-07 20:36:07,831 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:07,831 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:09,831 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:09,831 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:10,194 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,196 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,196 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:10,197 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:10,198 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:10,248 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:10,728 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_created():271] file/dir created: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:11,733 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:11,831 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:11,832 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:12,250 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:13,832 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:13,832 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:14,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:36:14,745 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:36:14,747 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:36:15,832 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:15,832 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:16,707 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,708 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:16,708 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:16,714 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:16,735 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:16,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:16,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:17,738 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:17,749 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:17,832 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:17,833 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:19,833 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:19,833 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:21,833 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:21,833 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:22,750 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:23,336 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,337 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:23,338 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:23,338 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:23,347 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:23,741 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:23,833 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:23,834 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:25,744 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:25,834 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:25,834 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:27,834 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:27,834 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:28,348 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:29,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:36:29,745 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:36:29,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:36:29,835 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:29,835 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:29,998 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:29,999 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:29,999 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:30,005 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:30,040 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,040 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,040 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,041 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:30,748 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:31,751 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:31,835 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:31,835 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:33,836 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:33,836 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:34,042 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:35,824 DEBUG   SystemMonitor:2129435 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-03-07 20:36:35,825 DEBUG   SenderThread:2129435 [sender.py:send():382] send: stats
+2025-03-07 20:36:35,836 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:35,836 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:36,655 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,656 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,656 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:36,656 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,657 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:36,719 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:36,756 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:37,762 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:37,836 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:37,836 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:39,719 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:39,837 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:39,837 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:41,837 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:41,837 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:43,837 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:43,837 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:44,621 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,622 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,622 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,622 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:44,622 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,624 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,625 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,625 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,625 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,625 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,625 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:44,633 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:44,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:36:44,745 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:36:44,747 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:36:44,766 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:44,902 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:45,768 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:45,838 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:45,838 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:47,838 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:47,838 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:49,838 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:49,838 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:49,903 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:51,839 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:51,839 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:52,411 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,412 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:36:52,412 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:36:52,445 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,452 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,453 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:36:52,772 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:36:53,774 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:36:53,839 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:53,839 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:55,454 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:36:55,840 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:55,840 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:57,840 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:57,840 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:36:59,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:36:59,746 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:36:59,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:36:59,841 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:36:59,841 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:00,263 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,264 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:00,264 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:00,273 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:00,304 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,304 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,304 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,304 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,304 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,304 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:00,777 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:01,305 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:01,782 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:01,841 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:01,841 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:03,841 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:03,842 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:05,825 DEBUG   SenderThread:2129435 [sender.py:send():382] send: stats
+2025-03-07 20:37:05,842 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:05,842 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:06,826 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:07,842 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:07,842 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:08,106 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,107 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,107 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,107 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,107 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,107 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:08,107 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:08,108 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,108 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,108 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,109 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,109 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,109 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,109 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,110 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,110 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,110 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,110 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:08,148 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:08,791 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:09,793 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:09,842 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:09,843 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:11,843 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:11,843 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:12,149 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:13,843 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:13,843 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:14,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:37:14,746 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:37:14,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:37:15,843 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:15,844 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:15,938 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,939 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:15,939 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:15,945 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:15,979 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,979 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,979 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,979 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,979 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,979 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:15,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:16,797 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:17,799 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:17,844 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:17,844 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:17,980 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:19,844 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:19,845 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:21,845 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:21,845 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:22,981 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:23,726 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,726 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,726 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,727 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:23,727 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:23,727 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,728 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:23,734 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:23,802 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:23,845 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:23,845 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:25,807 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:25,845 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:25,846 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:27,846 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:27,846 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:28,735 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:29,745 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:37:29,746 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:37:29,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:37:29,846 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:29,846 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:31,846 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:31,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:31,888 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,889 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:31,889 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:31,896 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:31,930 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,930 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,930 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,930 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,930 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:31,931 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:32,816 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:33,832 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:33,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:33,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:33,932 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:35,826 DEBUG   SenderThread:2129435 [sender.py:send():382] send: stats
+2025-03-07 20:37:35,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:35,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:37,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:37,847 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:39,827 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:39,848 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:39,848 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:39,945 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,945 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,945 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,946 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:39,946 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:39,946 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,947 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:39,952 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:40,838 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:41,840 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:41,848 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:41,848 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:43,848 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:43,848 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:44,746 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: stop_status
+2025-03-07 20:37:44,746 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: stop_status
+2025-03-07 20:37:44,748 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: internal_messages
+2025-03-07 20:37:44,887 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
+2025-03-07 20:37:45,849 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:45,849 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:47,849 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:47,849 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:48,010 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,011 DEBUG   SenderThread:2129435 [sender.py:send():382] send: history
+2025-03-07 20:37:48,011 DEBUG   SenderThread:2129435 [sender.py:send_request():409] send_request: summary_record
+2025-03-07 20:37:48,019 INFO    SenderThread:2129435 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2025-03-07 20:37:48,052 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,052 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,052 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,052 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,052 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,052 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,053 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: partial_history
+2025-03-07 20:37:48,844 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/wandb-summary.json
+2025-03-07 20:37:49,846 INFO    Thread-12 :2129435 [dir_watcher.py:_on_file_modified():288] file/dir modified: /oscar/data/gdk/ysun133/drago/logs/MiniGrid-FourRooms-New/final_check/task_idx_0/1/wandb/run-20250307_203535-jleuy2my/files/output.log
+2025-03-07 20:37:49,849 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'read_bytes'
+2025-03-07 20:37:49,849 ERROR   disk      :2129435 [interfaces.py:monitor():144] Failed to sample metric: 'NoneType' object has no attribute 'write_bytes'
+2025-03-07 20:37:50,054 DEBUG   HandlerThread:2129435 [handler.py:handle_request():146] handle_request: status_report
