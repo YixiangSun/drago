@@ -8,10 +8,6 @@ from torch.distributions.utils import _standard_normal
 from torch.autograd import Variable
 import torch
 import torch.nn.functional as F
-from sklearn.neighbors import NearestNeighbors
-from multiprocessing import Pool
-import matplotlib.pyplot as plt
-import os
 import torch.optim as optim
 from copy import deepcopy
 

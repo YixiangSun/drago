@@ -2,7 +2,6 @@ import numpy as np
 import gymnasium as gym
 import warnings
 from minigrid.wrappers import *
-from scipy import sparse
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
@@ -35,19 +34,20 @@ class ImageObservationWrapper(gym.ObservationWrapper):
 class StateObservationWrapper(gym.ObservationWrapper):
     def __init__(self, env):
         super().__init__(env)
+        self.env = env
         self.dir_dim = float(env.observation_space['direction'].n)
-        # self.pos_dim = env.width + env.height
-        # new_shape = (self.dir_dim + self.pos_dim, )
         self.observation_space = gym.spaces.Box(
             low=0.0,
             high=1.0,
             shape=(3,),
             dtype='float32'
         )
+        self.agent_pos = env.env.env.env.agent_pos
+        self.size = env.env.env.env.size
     
     def observation(self, obs):
-        
         # Use continuous observation space
+        self.agent_pos = self.env.env.env.env.agent_pos
         normalized_agent_pos = np.array(self.agent_pos) / self.size * 2.0 - 1
         normalized_direction = float(obs['direction']) / self.dir_dim * 2.0 - 1
         
@@ -78,13 +78,12 @@ def make_env(cfg):
                    task_idx=cfg.task_idx, max_episode_steps=cfg.episode_length, size=cfg.size, 
                    render_mode=cfg.render_mode, dense_reward=cfg.dense_reward, 
                    goal_radius=cfg.goal_radius, put_blocks=cfg.put_blocks)
+    
     if cfg.modality == "pixels":
-        # NOTE: Image observation not tested yet
+        # NOTE: Image observation not implemented yet
         env = ImageObservationWrapper(env)
-    elif cfg.modality == "state" or cfg.modality == "dqn":
+    elif cfg.modality == "state":
         env = StateObservationWrapper(env)
-        if cfg.modality == "dqn":
-            return env
     else:
         raise ValueError(f"Invalid modality: {cfg.modality}")
     env = OneHotActionWrapper(env)

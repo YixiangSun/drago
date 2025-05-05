@@ -68,7 +68,7 @@ mlp_dim: 512
 latent_dim: 50
 vae_enc_dim: 64
 gumble_temp: 1.0
-use_crelu: false
+use_crelu: true
 vae_data_update_freq: 1
 
 # fine-tuning
